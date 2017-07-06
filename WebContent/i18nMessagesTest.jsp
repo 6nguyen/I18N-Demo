@@ -4,12 +4,15 @@
 <!-- Change the locale based on parameter being passed in -->
 <!-- 
 	create a var called theLocale
-	if the page Locale is not empty, store value into theLocale
-	else get the page's Locale and store value into theLocale	
+	if the page Locale is not empty, store value into "theLocale"
+	else get the page's Locale and store value into "theLocale"	
  -->
 <c:set var="theLocale"
 	value="${not empty param.theLocale ? param.theLocale : pageContext.request.Locale}"
 	scope="session" />
+	
+<!-- set the value of "theLocale" into the page's theLocale -->
+<fmt:setLocale value="${theLocale}" />
 
 <html>
 
