@@ -26,6 +26,8 @@ View this page in: <br/>
 <a href="i18nMessagesTest.jsp?theLocale=en_US">English (US)</a>  |
 <a href="i18nMessagesTest.jsp?theLocale=es_ES">Spanish (ES)</a>  |
 <a href="i18nMessagesTest.jsp?theLocale=de_DE">German (DE)</a>
+<br/><br/>
+Selected language: ${theLocale}
 <hr> 
 <br/><br/>
 
@@ -40,6 +42,10 @@ View this page in: <br/>
 
 <fmt:message key="label.welcome" />
 <br/><br/>
+
+<hr>
+
+
 
 </body>
 
