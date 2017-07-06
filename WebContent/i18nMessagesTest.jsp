@@ -32,10 +32,10 @@ View this page in: <br/>
 <fmt:message key="label.greeting" />
 <br/><br/>
 
-<fmt:message key="label.firstName" />George
-<br/><br/>
+<fmt:message key="label.firstName" /> <i>George</i>
+<br/>
 
-<fmt:message key="label.lastName" />Wynn
+<fmt:message key="label.lastName" /> <i>Wynn</i>
 <br/><br/>
 
 <fmt:message key="label.welcome" />
