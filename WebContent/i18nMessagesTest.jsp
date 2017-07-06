@@ -8,11 +8,16 @@
 	else get the page's Locale and store value into "theLocale"	
  -->
 <c:set var="theLocale"
-	value="${not empty param.theLocale ? param.theLocale : pageContext.request.Locale}"
+	value="${not empty param.theLocale ? param.theLocale : pageContext.request.locale}"
 	scope="session" />
 	
 <!-- set the value of "theLocale" into the page's theLocale -->
 <fmt:setLocale value="${theLocale}" />
+
+<!-- set reference to the bundle to use -->
+<fmt:setBundle basename="com.nguyen92.jsp.i18n.resources.myLabels" />
+
+
 
 <html>
 
